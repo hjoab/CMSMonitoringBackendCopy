@@ -1,0 +1,46 @@
+cmd.Parameters.Add(new SqlParameter(@watch_wifi_mac ,watchConfig.watch_wifi_mac);
+cmd.Parameters.Add(new SqlParameter(@watch_app_version , watchConfig.watch_app_version );
+cmd.Parameters.Add(new SqlParameter(@deployment_pers_number , watchConfig.deployment_pers_number );
+cmd.Parameters.Add(new SqlParameter(@deployment_display_battery_only ,);
+cmd.Parameters.Add(new SqlParameter(@watch_cell_provider ,);
+cmd.Parameters.Add(new SqlParameter(@watch_device_duid ,);
+cmd.Parameters.Add(new SqlParameter(@watch_device_id ,);
+cmd.Parameters.Add(new SqlParameter(@watch_device_imei_meid ,);
+cmd.Parameters.Add(new SqlParameter(@watch_device_model ,);
+cmd.Parameters.Add(new SqlParameter(@watch_last_latitude ,);
+cmd.Parameters.Add(new SqlParameter(@watch_last_longitude ,);
+cmd.Parameters.Add(new SqlParameter(@watch_location_accuracy ,);
+cmd.Parameters.Add(new SqlParameter(@watch_location_time ,);
+cmd.Parameters.Add(new SqlParameter(@watch_phone_number ,);
+cmd.Parameters.Add(new SqlParameter(@current_battery_level ,);
+cmd.Parameters.Add(new SqlParameter(@watch_rssi ,);
+cmd.Parameters.Add(new SqlParameter(@watch_dataservice_pid ,);
+cmd.Parameters.Add(new SqlParameter(@watch_mainui_pid ,);
+cmd.Parameters.Add(new SqlParameter(@watch_face_pid ,);
+cmd.Parameters.Add(new SqlParameter(@message_utc_time ,);
+cmd.Parameters.Add(new SqlParameter(@utc_offset ,);
+
+
+watchConfig.deployed_to_party
+watchConfig.owner_party_uuid
+watchConfig.owner_display_name
+
+watchConfig.deployment_display_battery_only
+watchConfig.watch_cell_provider
+watchConfig.watch_device_duid
+watchConfig.watch_device_id
+watchConfig.watch_device_imei_meid
+watchConfig.watch_device_model
+watchConfig.watch_last_latitude
+watchConfig.watch_last_longitude
+watchConfig.watch_location_accuracy
+watchConfig.watch_location_time
+watchConfig.watch_phone_number
+
+watchConfig.current_battery_level
+watchConfig.watch_rssi
+watchConfig.watch_dataservice_pid
+watchConfig.watch_mainui_pid
+watchConfig.watch_face_pid
+watchConfig.message_utc_time
+watchConfig.utc_offset
