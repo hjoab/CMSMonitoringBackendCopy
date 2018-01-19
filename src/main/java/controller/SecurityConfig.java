@@ -23,10 +23,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception{
-        http.cors();
+        //http.cors();
         //http.csrf().disable().cors();
 
-        http.authorizeRequests().antMatchers(HttpMethod.GET,"/userInformation").permitAll();
+        //http.authorizeRequests().antMatchers(HttpMethod.GET,"/userInformation").permitAll();
         JwtWebSecurityConfigurer
                 .forRS256(apiAudience,issuer)
                 .configure(http)
