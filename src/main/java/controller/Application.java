@@ -10,7 +10,7 @@ import org.springframework.context.annotation.PropertySources;
 import java.util.Date;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "controller")
+//@ComponentScan(basePackages = "controller")
 @EnableAutoConfiguration
 @PropertySources({
         @PropertySource("classpath:application.properties"),
