@@ -30,7 +30,7 @@ public class MonitoringController {
     @CrossOrigin(origins = "*")
     @RequestMapping(value = "/userInformation", method = RequestMethod.GET)
     public @ResponseBody String getUserInformation(@RequestParam(value="id",required=true)String id) {
-        User user = reemoAPI.getUser(id);
+        /*User user = reemoAPI.getUser(id);
         String latitude = user.latitude;
         String longitude = user.longitude;
         String closestAddress = PBAPI.getAddressByLocation(latitude,longitude);
@@ -43,7 +43,7 @@ public class MonitoringController {
                 "latitude: \"" + latitude +"\"" +
                 "longitude: \"" + longitude +"\"" +
                 "user: \"" + user.toString()+"\"" +
-                "}";
+                "}";*/
         return "hello";
     }
 
