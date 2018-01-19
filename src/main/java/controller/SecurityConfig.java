@@ -35,7 +35,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET,"/health/**").permitAll()
                 //.antMatchers(HttpMethod.GET,"/userInformation/**").permitAll()
                 .antMatchers(HttpMethod.GET,"/config/**").permitAll()
-                .anyRequest().authenticated();
+                .anyRequest().anonymous();
+                //.anyRequest().authenticated();
+
                 //.anyRequest().fullyAuthenticated();
     }
 }
