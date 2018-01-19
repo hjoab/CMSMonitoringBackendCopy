@@ -28,7 +28,7 @@ public class MonitoringController {
     }
 
     @CrossOrigin(origins = "*")
-    @RequestMapping("/userInformation")
+    @RequestMapping("/userInformation", method = RequestMethod.GET)
     public @ResponseBody String getUserInformation(@RequestParam(value="id",required=true)String id) {
         User user = reemoAPI.getUser(id);
         String latitude = user.latitude;
