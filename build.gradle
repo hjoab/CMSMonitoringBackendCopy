@@ -34,6 +34,7 @@ repositories {
 dependencies {
     // https://mvnrepository.com/artifact/com.mashape.unirest/unirest-java
     compile 'com.auth0:auth0-spring-security-api:1.0.0-rc.2'
+    compile "com.microsoft.sqlserver:mssql-jdbc:6.2.1.jre8"
     compile group: 'com.mashape.unirest', name: 'unirest-java', version: '1.3.1'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-security'
     compile("org.springframework.boot:spring-boot-starter-web")

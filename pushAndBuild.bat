@@ -1,3 +1,3 @@
 REM @echo off
-bash -c "sudo scp -rp ../psapApi jake@172.16.7.141:./ "
-bash -c "sudo ssh jake@172.16.7.141 'sudo ./psapApi/buildAndPushToDocker.sh'"
+gradle build
+bash -c "scp ./build/libs/psap-api-1.0-SNAPSHOT.jar reemo@52.165.134.211:./ && ssh reemo@52.165.134.211 'java -jar ./psap-api-1.0-SNAPSHOT.jar'"

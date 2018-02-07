@@ -24,7 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception{
         //http.cors();
-        //http.csrf().disable().cors();
+        http.csrf().disable().cors();
 
         //http.authorizeRequests().antMatchers(HttpMethod.GET,"/userInformation").permitAll();
         JwtWebSecurityConfigurer
@@ -33,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers(HttpMethod.GET,"/psapTesting/**").permitAll()
                 .antMatchers(HttpMethod.GET,"/health/**").permitAll()
-                .antMatchers(HttpMethod.GET,"/userInformation/**").permitAll()
+                //.antMatchers(HttpMethod.GET,"/userInformation**").permitAll()
                 .antMatchers(HttpMethod.GET,"/config/**").permitAll()
                 //.anyRequest().anonymous();
                 .anyRequest().authenticated();
