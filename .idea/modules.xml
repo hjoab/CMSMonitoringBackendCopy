@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/psapApi.iml" filepath="$PROJECT_DIR$/.idea/modules/psapApi.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/psapApi_main.iml" filepath="$PROJECT_DIR$/.idea/modules/psapApi_main.iml" group="psapApi" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/psapApi_test.iml" filepath="$PROJECT_DIR$/.idea/modules/psapApi_test.iml" group="psapApi" />
     </modules>
   </component>
 </project>

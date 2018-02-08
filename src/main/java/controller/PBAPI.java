@@ -1,5 +1,6 @@
 package controller;
 
+
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
@@ -60,8 +61,9 @@ public class PBAPI {
                     .asJson();
             //System.out.println(response.getCode());
             //System.out.println(response.getBody());
-            logger.info("Psap info for lat: " + latitude + " long: " + longitude + " :\n" + response.getBody().toString());
-            return response.getBody().toString();
+            logger.info("ahj info for lat: " + latitude + " long: " + longitude + " :\n" + response.getBody().toString());
+            String ahj = response.getBody().getObject().getJSONObject("ahjs").toString();
+            return ahj;
 
         }catch (Exception e){
             logger.error("Error getting psap info for lat: " + latitude + " long: " + longitude + "\n" + e.getMessage());
@@ -70,6 +72,22 @@ public class PBAPI {
         return null;
     }
     public String getAddressByLocation(String latitude, String longitude){
-        return "4241 44th ave s";
+        String token = authenticate();
+        try {
+            HttpResponse<JsonNode> response = Unirest.get("https://api.pitneybowes.com/location-intelligence/geoenrich/v1/address/bylocation?" +
+                    "latitude="+latitude +
+                    "&longitude=" +longitude+
+                    "&searchRadius=2640&searchRadiusUnit=feet" ).header("Authorization", "Bearer " + token).asJson();
+            // https://api.pitneybowes.com/location-intelligence/geoenrich/v1/address/bylocation?latitude=35.0118&longitude=-81.9571&searchRadius=2640&searchRadiusUnit=feet
+            String formattedAddress = response.getBody().getObject().getJSONArray("location").getJSONObject(0).getJSONObject("address").getString("formattedAddress");
+
+
+            return formattedAddress;
+
+        }catch (Exception e){
+            logger.error("Error getting location info for lat: " + latitude + " long: " + longitude + "\n" + e.getMessage());
+            e.printStackTrace();
+        }
+        return null;
     }
 }
