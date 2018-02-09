@@ -4,10 +4,7 @@ import com.google.gson.Gson;
 import controller.User;
 import org.apache.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
 public class ReemoAPI {
 
@@ -53,9 +50,11 @@ public class ReemoAPI {
         user.updateTime = "03/13/1994 4:25 pm";
         user.battery = "54";
         user.phoneNumber = "6512805141";*/
+        user.name = "Pete Obringer";
+        user.phoneNumber = id;
 
         // pass in the user by reference to be modified
-        getBasicUserInfo(id,user);
+        //getBasicUserInfo(id,user);
         getLocation(id, user);
         getBattery(id, user);
 
@@ -114,10 +113,7 @@ public class ReemoAPI {
         return 0;
     }
 
-    public int getBasicUserInfo(String phoneNumber, User user){
-        /**
-         * some clooj that needs to be removed just to test dev
-         */
+    public int getBasicUserInfo(String phoneNumber, User user) {
 
         try {
             String devURL = "jdbc:sqlserver://sql-server-reemo-dev.database.windows.net:1433;database=reemodb;user=reemoadmin@sql-server-reemo-dev;password=Playtabas3!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
@@ -125,35 +121,41 @@ public class ReemoAPI {
             //this.connection.close();
             this.connection = DriverManager.getConnection(devURL);
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
 
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("{call dbo.Wearer_GetProfileData(?)}");
-            preparedStatement.setString(1,phoneNumber);
-            ResultSet rs = preparedStatement.executeQuery();
-            rs.next();
-            // RS 1
-            user.name = rs.getString("full_name");
-            // RS 2
+            PreparedStatement preparedStatement = connection.prepareStatement("{call dbo.Wearer_GetProfileData2(?)}");
+            preparedStatement.setString(1, phoneNumber);
+            Boolean isResult = preparedStatement.execute();
 
-            // RS 3
-            user.lastAddress = rs.getString("address_line_1_text");
-            // RS 4
-            // RS 5
-            user.phoneNumber = rs.getString("telephone_number_text");
+            ResultSet rs;
+            ResultSetMetaData md;
+            while(isResult){
+                rs = preparedStatement.getResultSet();
+                rs.next();
+                md = rs.getMetaData();
+                for (int column = 1; column <= md.getColumnCount(); column++) {
+                    String columnName = md.getColumnLabel(column);
+                    if (columnName.equals("full_name")){
+                        user.name = getResultOrNull(rs,"full_name");
+                    }
+                    if (columnName.equals("address_line_1_text")){
 
-
-            /*while (rs.next()){
-                // go through the result sets and grab the users data.
-                rs.
-            }*/
-            rs.close();
+                        user.lastAddress = getResultOrNull(rs,"address_line_1_text");
+                    }
+                    if (columnName.equals("telephone_number_text")){
+                        user.phoneNumber = getResultOrNull(rs,"telephone_number_text");
+                    }
+                    System.out.print(columnName + " ");
+                }
+                System.out.println();
+                rs.close();
+                isResult = preparedStatement.getMoreResults();
+            }
             preparedStatement.close();
-
-
         }catch (Exception e){
             logger.info("no User found for phone number: " + phoneNumber);
             e.printStackTrace();
@@ -161,9 +163,16 @@ public class ReemoAPI {
         }
 
 
-
         return 0;
     }
 
+    private String getResultOrNull(ResultSet rs, String columnValue){
+        try {
+            return rs.getString(columnValue);
+        }catch (Exception e){
+            System.out.println("no value for column " + columnValue);
+        }
+        return null;
+    }
 
 }
