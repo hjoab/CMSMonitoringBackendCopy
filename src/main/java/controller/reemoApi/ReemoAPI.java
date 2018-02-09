@@ -122,7 +122,7 @@ public class ReemoAPI {
         try {
             String devURL = "jdbc:sqlserver://sql-server-reemo-dev.database.windows.net:1433;database=reemodb;user=reemoadmin@sql-server-reemo-dev;password=Playtabas3!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
 
-            this.connection.close();
+            //this.connection.close();
             this.connection = DriverManager.getConnection(devURL);
 
         }catch (Exception e) {
@@ -156,6 +156,7 @@ public class ReemoAPI {
 
         }catch (Exception e){
             logger.info("no User found for phone number: " + phoneNumber);
+            e.printStackTrace();
             return 1;
         }
 
