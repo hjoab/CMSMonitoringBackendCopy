@@ -115,6 +115,50 @@ public class ReemoAPI {
     }
 
     public int getBasicUserInfo(String phoneNumber, User user){
+        /**
+         * some clooj that needs to be removed just to test dev
+         */
+
+        try {
+            String devURL = "jdbc:sqlserver://sql-server-reemo-dev.database.windows.net:1433;database=reemodb;user=reemoadmin@sql-server-reemo-dev;password=Playtabas3!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+
+            this.connection.close();
+            this.connection = DriverManager.getConnection(devURL);
+
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("{call dbo.Wearer_GetProfileData(?)}");
+            preparedStatement.setString(1,phoneNumber);
+            ResultSet rs = preparedStatement.executeQuery();
+            rs.next();
+            // RS 1
+            user.name = rs.getString("full_name");
+            // RS 2
+
+            // RS 3
+            user.lastAddress = rs.getString("address_line_1_text");
+            // RS 4
+            // RS 5
+            user.phoneNumber = rs.getString("telephone_number_text");
+
+
+            /*while (rs.next()){
+                // go through the result sets and grab the users data.
+                rs.
+            }*/
+            rs.close();
+            preparedStatement.close();
+
+
+        }catch (Exception e){
+            logger.info("no User found for phone number: " + phoneNumber);
+            return 1;
+        }
+
 
 
         return 0;

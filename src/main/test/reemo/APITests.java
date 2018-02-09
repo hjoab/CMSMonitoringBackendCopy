@@ -31,4 +31,14 @@ public class APITests {
         User user = api.getUser(phoneNumber);
         System.out.println(new Gson().toJson(user).toString());
     }
+
+    @Test
+    public void testBasicUserInfo(){
+        String phoneNUmber = "9522287193";
+        User user = new User();
+        ReemoApi api = new ReemoAPI();
+        api.getBasicUserInformation(phoneNUmber, user);
+        System.out.println(new Gson().toJson(user).toString());
+
+    }
 }
