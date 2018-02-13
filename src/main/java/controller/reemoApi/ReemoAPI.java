@@ -15,7 +15,8 @@ public class ReemoAPI {
     Connection connection;
     static final String username = "reemoprodweb";
     static final String password = "BX$974g!lM7*hVW0";
-    static final String URL = "jdbc:sqlserver://prod-uc-db-01.database.windows.net:1433;database=reemoprod01;user="+username+";password="+password+";encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+    //static final String prodURL = "jdbc:sqlserver://prod-uc-db-01.database.windows.net:1433;database=reemoprod01;user="+username+";password="+password+";encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+    String devURL = "jdbc:sqlserver://sql-server-reemo-dev.database.windows.net:1433;database=reemodb;user=reemoadmin@sql-server-reemo-dev;password=Playtabas3!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
 
 
     public ReemoAPI(){
@@ -24,7 +25,7 @@ public class ReemoAPI {
 
     public void connect(){
         try {
-            connection = DriverManager.getConnection(URL);
+            connection = DriverManager.getConnection(devURL);
             String schema = connection.getSchema();
             logger.info("Schema: " + schema);
         }catch (Exception e){
@@ -119,15 +120,15 @@ public class ReemoAPI {
          * some clooj that needs to be removed just to test dev
          */
 
-        try {
-            String devURL = "jdbc:sqlserver://sql-server-reemo-dev.database.windows.net:1433;database=reemodb;user=reemoadmin@sql-server-reemo-dev;password=Playtabas3!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
-
-            //this.connection.close();
-            this.connection = DriverManager.getConnection(devURL);
-
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            String devURL = "jdbc:sqlserver://sql-server-reemo-dev.database.windows.net:1433;database=reemodb;user=reemoadmin@sql-server-reemo-dev;password=Playtabas3!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+//
+//            //this.connection.close();
+//            this.connection = DriverManager.getConnection(devURL);
+//
+//        }catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
 
         try {
@@ -157,6 +158,9 @@ public class ReemoAPI {
         }catch (Exception e){
             logger.info("no User found for phone number: " + phoneNumber);
             e.printStackTrace();
+            user.name = "";
+            user.lastAddress = "";
+            user.phoneNumber = "";
             return 1;
         }
 

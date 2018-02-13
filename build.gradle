@@ -12,6 +12,7 @@ buildscript {
         //classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
         classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.9.RELEASE'
         classpath('gradle.plugin.com.palantir.gradle.docker:gradle-docker:0.13.0')
+        classpath 'org.hidetake:gradle-ssh-plugin:2.9.0'
     }
 }
 
@@ -21,6 +22,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'com.palantir.docker'
+apply plugin: 'org.hidetake.ssh'
 
 sourceCompatibility = 1.8
 jar {
@@ -46,11 +48,38 @@ dependencies {
 
 }
 
+remotes {
+    webServer {
+        host = '52.165.134.211'
+        user = 'reemo'
+        password = 'Playtabas3!01'
+        //identity = file('id_rsa')
+    }
+}
+
+
+
 docker {
     name "${project.group}/${jar.baseName}"
     files jar.archivePath, 'application.properties', 'auth0.properties'
     buildArgs(['JAR_FILE': "${jar.archiveName}"])
 }
+task deploy{
+    doLast {
+        ssh.run {
+            settings {
+                // overrides global settings
+                //pty = true
+                knownHosts = allowAnyHosts
+            }
+
+            session(remotes.webServer) {
+                put from: './build/libs/psap-api-1.0-SNAPSHOT.jar', into: './'
+            }
+        }
+    }
+}
+
 /*shadowJar{
     baseName = 'psapApi'
     classifier = null
