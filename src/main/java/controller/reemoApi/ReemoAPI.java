@@ -100,7 +100,6 @@ public class ReemoAPI {
             while (rs.next()) {
                 user.battery = rs.getString("battery_level");
                 //rs.getString("last_location_timestamp_utc");
-
             }
             rs.close();
             pstmt.close();
@@ -116,7 +115,6 @@ public class ReemoAPI {
 
     public int getBasicUserInfo(String phoneNumber, User user) {
 
-<<<<<<< HEAD
 //        try {
 //            String devURL = "jdbc:sqlserver://sql-server-reemo-dev.database.windows.net:1433;database=reemodb;user=reemoadmin@sql-server-reemo-dev;password=Playtabas3!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
 //
@@ -126,18 +124,6 @@ public class ReemoAPI {
 //        }catch (Exception e) {
 //            e.printStackTrace();
 //        }
-=======
-        try {
-            String devURL = "jdbc:sqlserver://sql-server-reemo-dev.database.windows.net:1433;database=reemodb;user=reemoadmin@sql-server-reemo-dev;password=Playtabas3!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
-
-            //this.connection.close();
-            this.connection = DriverManager.getConnection(devURL);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
->>>>>>> 7688e4ea8af81d66b6734d1dbff4c171c329fa5b
-
 
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("{call dbo.Wearer_GetProfileData2(?)}");
