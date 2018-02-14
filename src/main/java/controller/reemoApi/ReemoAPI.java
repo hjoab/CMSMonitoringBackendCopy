@@ -5,6 +5,11 @@ import controller.User;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 public class ReemoAPI {
 
@@ -51,11 +56,11 @@ public class ReemoAPI {
         user.updateTime = "03/13/1994 4:25 pm";
         user.battery = "54";
         user.phoneNumber = "6512805141";*/
-        user.name = "Pete Obringer";
-        user.phoneNumber = id;
+        //user.name = "Pete Obringer";
+        //user.phoneNumber = id;
 
         // pass in the user by reference to be modified
-        //getBasicUserInfo(id,user);
+        getBasicUserInfo(id,user);
         getLocation(id, user);
         getBattery(id, user);
 
@@ -148,9 +153,7 @@ public class ReemoAPI {
                     if (columnName.equals("telephone_number_text")){
                         user.phoneNumber = getResultOrNull(rs,"telephone_number_text");
                     }
-                    System.out.print(columnName + " ");
                 }
-                System.out.println();
                 rs.close();
                 isResult = preparedStatement.getMoreResults();
             }
@@ -175,6 +178,22 @@ public class ReemoAPI {
             System.out.println("no value for column " + columnValue);
         }
         return null;
+    }
+
+
+    // returns true if the first date is later than the second, or false otherwise
+    public boolean isLater(String dateString1, String dateString2){
+        //DateFormat format = new SimpleDateFormat("YYYY-MM-DD HH:mm:ss-mmmmmmm");
+        //2018-01-29 18:18:23.0000000 +00:00
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.nnnnnnn ZZZZZ", Locale.ENGLISH);
+        LocalDate date1 = LocalDate.parse(dateString1, formatter);
+        System.out.println(date1.toString());
+        LocalDate date2 = LocalDate.parse(dateString2, formatter);
+        System.out.println(date2.toString());
+
+        return date1.isAfter(date2);
+
     }
 
 }

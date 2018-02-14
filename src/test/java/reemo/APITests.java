@@ -39,6 +39,17 @@ public class APITests {
         ReemoAPI api = new ReemoAPI();
         api.getBasicUserInfo(phoneNUmber, user);
         System.out.println(new Gson().toJson(user).toString());
+    }
 
+    @Test
+    public void testDateComparitor(){
+        ReemoAPI api = new ReemoAPI();
+        //User user = api.getUser("9522287193");
+        User user = new User();
+        user.updateTime = "2018-01-29 18:18:23.0000000 +00:00";
+
+        String fakeEarlyDate = "2017-01-29 15:18:21.0000000 +00:00";
+        System.out.println(user.updateTime);
+        assert api.isLater(user.updateTime, fakeEarlyDate);
     }
 }
