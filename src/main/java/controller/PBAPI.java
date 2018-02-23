@@ -90,4 +90,24 @@ public class PBAPI {
         }
         return null;
     }
+
+    public String getAHJInfoByAddress(String address){
+        String token = authenticate();
+        try {
+            HttpResponse<JsonNode> response = Unirest.get("https://api.pitneybowes.com/location-intelligence/geo911/v1/ahj-psap/byaddress" +
+                    "?address=" + address)
+                    .header("Authorization","Bearer " + token)
+                    .asJson();
+            //System.out.println(response.getCode());
+            //System.out.println(response.getBody());
+            logger.info("ahj info for address: " + address + " :\n" + response.getBody().toString());
+            String ahj = response.getBody().getObject().getJSONObject("ahjs").toString();
+            return ahj;
+
+        }catch (Exception e){
+            logger.error("Error getting psap info for address: " + address + "\n" + e.getMessage());
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

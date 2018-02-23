@@ -37,6 +37,7 @@ public class APITests {
         String phoneNUmber = "9522287193";
         User user = new User();
         ReemoAPI api = new ReemoAPI();
+        api.connect();
         api.getBasicUserInfo(phoneNUmber, user);
         System.out.println(new Gson().toJson(user).toString());
     }
@@ -52,4 +53,13 @@ public class APITests {
         System.out.println(user.updateTime);
         assert api.isLater(user.updateTime, fakeEarlyDate);
     }
+    @Test
+    public void testIsPersEvent(){
+        ReemoAPI api = new ReemoAPI();
+        // this test will only be true if we have a pers event going....
+        Boolean isPers = api.isPersEvent("9522287193");
+        System.out.println("is pers event: " + isPers);
+        //assert
+    }
+
 }

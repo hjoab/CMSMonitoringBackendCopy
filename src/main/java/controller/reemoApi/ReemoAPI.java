@@ -17,7 +17,7 @@ public class ReemoAPI {
     Connection connection;
     static final String username = "reemoprodweb";
     static final String password = "BX$974g!lM7*hVW0";
-    //static final String prodURL = "jdbc:sqlserver://prod-uc-db-01.database.windows.net:1433;database=reemoprod01;user="+username+";password="+password+";encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+    static final String prodURL = "jdbc:sqlserver://prod-uc-db-01.database.windows.net:1433;database=reemoprod01;user="+username+";password="+password+";encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
     String devURL = "jdbc:sqlserver://sql-server-reemo-dev.database.windows.net:1433;database=reemodb;user=reemoadmin@sql-server-reemo-dev;password=Playtabas3!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
 
 
@@ -27,7 +27,7 @@ public class ReemoAPI {
 
     public void connect(){
         try {
-            connection = DriverManager.getConnection(devURL);
+            connection = DriverManager.getConnection(prodURL);
             String schema = connection.getSchema();
             logger.info("Schema: " + schema);
         }catch (Exception e){
@@ -89,7 +89,7 @@ public class ReemoAPI {
         }
 
         catch (Exception e) {
-            //e.printStackTrace();
+            e.printStackTrace();
             System.out.println("no user found for phone number: " + phoneNumber);
             return 1;
 
@@ -112,6 +112,7 @@ public class ReemoAPI {
 
         catch (Exception e) {
             //e.printStackTrace();
+            e.printStackTrace();
             System.out.println("No user found for phone number: " + phoneNumber);
             return 1;
         }
@@ -130,8 +131,10 @@ public class ReemoAPI {
 //            e.printStackTrace();
 //        }
 
+        String firstname = "";
+        String lastName = "";
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("{call dbo.Wearer_GetProfileData2(?)}");
+            PreparedStatement preparedStatement = connection.prepareStatement("{call dbo.Wearer_GetProfileData(?)}");
             preparedStatement.setString(1, phoneNumber);
             Boolean isResult = preparedStatement.execute();
 
@@ -143,8 +146,11 @@ public class ReemoAPI {
                 md = rs.getMetaData();
                 for (int column = 1; column <= md.getColumnCount(); column++) {
                     String columnName = md.getColumnLabel(column);
-                    if (columnName.equals("full_name")){
-                        user.name = getResultOrNull(rs,"full_name");
+                    if (columnName.equals("first_name")){
+                        firstname = getResultOrNull(rs,"first_name");
+                    }
+                    if (columnName.equals("last_name")){
+                        lastName = getResultOrNull(rs,"last_name");
                     }
                     if (columnName.equals("address_line_1_text")){
 
@@ -166,10 +172,42 @@ public class ReemoAPI {
             user.phoneNumber = "";
             return 1;
         }
+        user.name = firstname + " " + lastName;
 
 
         return 0;
     }
+
+    public boolean isPersEvent(String phoneNumber){
+        connect();
+        final String YES = "1";
+        //final String NO = "0";
+        String isPers = null;
+
+        try {
+            PreparedStatement pstmt = connection.prepareStatement("{call dbo.ETL_GetPERSEventStatus(?)}");
+            pstmt.setString(1, phoneNumber);
+            ResultSet rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                isPers = rs.getString("PERSEventStatus");
+                System.out.println(isPers);
+                //rs.getString("last_location_timestamp_utc");
+            }
+            rs.close();
+            pstmt.close();
+        }
+
+        catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("No user found for phone number: " + phoneNumber);
+            disconnect();
+            return false;
+        }
+        disconnect();
+        return isPers.equals(YES);
+    }
+
 
     private String getResultOrNull(ResultSet rs, String columnValue){
         try {
@@ -179,6 +217,7 @@ public class ReemoAPI {
         }
         return null;
     }
+
 
 
     // returns true if the first date is later than the second, or false otherwise

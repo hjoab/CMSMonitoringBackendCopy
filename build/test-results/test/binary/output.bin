@@ -1,266 +1,435 @@
-s12:28:36.536 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-w12:28:36.546 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-ë12:28:36.547 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
-ñ12:28:36.558 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-Š12:28:36.559 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://api.pitneybowes.com:443
-•12:28:36.658 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to api.pitneybowes.com/52.20.133.54:443
-¥12:28:36.658 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to api.pitneybowes.com/52.20.133.54:443 with timeout 10000
-…12:28:36.757 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
-“	12:28:36.757 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-k12:28:36.757 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
-s12:28:36.912 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
-v12:28:36.913 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
-˜12:28:36.913 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-·12:28:36.914 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.pitneybowes.com, OU=PSG, O=Pitney Bowes, L=Danbury, ST=Connecticut, C=US
-–12:28:36.914 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.pitneybowes.com, pitneybowes.com]
-Î12:28:36.914 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
-¡12:28:36.921 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.86.187:59701<->52.20.133.54:443
-Ž12:28:36.922 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
-12:28:36.922 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /oauth/token HTTP/1.1
-q12:28:36.922 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-j12:28:36.925 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /oauth/token HTTP/1.1
-©12:28:36.926 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==
-12:28:36.926 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> content-type: application/x-www-form-urlencoded
-e12:28:36.926 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
-l12:28:36.926 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
-b12:28:36.926 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 29
-i12:28:36.926 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
-f12:28:36.926 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
-q12:28:36.927 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /oauth/token HTTP/1.1[\r][\n]"
-°12:28:36.927 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==[\r][\n]"
-†12:28:36.927 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "content-type: application/x-www-form-urlencoded[\r][\n]"
-l12:28:36.928 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
-s12:28:36.928 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
-i12:28:36.928 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 29[\r][\n]"
-p12:28:36.928 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
-m12:28:36.929 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
-W12:28:36.929 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
-l12:28:36.929 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "grant_type=client_credentials"
-f12:28:37.234 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-u12:28:37.235 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
-u12:28:37.235 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
-z12:28:37.235 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 14 Feb 2018 18:28:37 GMT[\r][\n]"
-j12:28:37.235 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 186[\r][\n]"
-m12:28:37.235 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
-W12:28:37.236 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
-‰12:28:37.236 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"access_token":"fqBCA6GA9XggV5sNEUWpdzkP2h8p","tokenType":"BearerToken","issuedAt":"1518632917028","expiresIn":"35999","clientID":"hqquQTn9AA4GWOAKyqCpppnFQ0Z3nuHM","org":"pitneybowes"}"
-_12:28:37.243 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
-n12:28:37.244 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
-n12:28:37.244 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
-s12:28:37.244 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 14 Feb 2018 18:28:37 GMT
-c12:28:37.244 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 186
-f12:28:37.245 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
-|12:28:37.257 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-À12:28:37.264 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
-ó12:28:37.264 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-12:28:37.273 [Test worker] INFO controller.PBAPI - successfully authenticated with access token: fqBCA6GA9XggV5sNEUWpdzkP2h8p
-s12:28:37.277 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-w12:28:37.278 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-ë12:28:37.278 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-ñ12:28:37.278 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-Ž12:28:37.278 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
-12:28:37.279 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /location-intelligence/geoenrich/v1/address/bylocation?latitude=44.9256313&longitude=-93.20988499999999&searchRadius=2640&searchRadiusUnit=feet HTTP/1.1
-q12:28:37.279 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-ì12:28:37.279 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /location-intelligence/geoenrich/v1/address/bylocation?latitude=44.9256313&longitude=-93.20988499999999&searchRadius=2640&searchRadiusUnit=feet HTTP/1.1
-‚12:28:37.279 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Bearer fqBCA6GA9XggV5sNEUWpdzkP2h8p
-e12:28:37.279 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
-l12:28:37.279 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
-i12:28:37.279 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
-f12:28:37.280 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
-ó12:28:37.280 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /location-intelligence/geoenrich/v1/address/bylocation?latitude=44.9256313&longitude=-93.20988499999999&searchRadius=2640&searchRadiusUnit=feet HTTP/1.1[\r][\n]"
-‰12:28:37.280 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Bearer fqBCA6GA9XggV5sNEUWpdzkP2h8p[\r][\n]"
-l12:28:37.280 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
-s12:28:37.280 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
-p12:28:37.280 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
-m12:28:37.280 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
-W12:28:37.280 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
-f12:28:37.440 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-}12:28:37.441 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
-˜12:28:37.441 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Headers: accept, authorization, content-type[\r][\n]"
-”12:28:37.441 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS[\r][\n]"
-u12:28:37.441 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
-v12:28:37.442 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Max-Age: 3628800[\r][\n]"
-u12:28:37.442 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
-z12:28:37.442 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 14 Feb 2018 18:28:37 GMT[\r][\n]"
-j12:28:37.442 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-IsBilled: true[\r][\n]"
-l12:28:37.442 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-MessageWeight: 3[\r][\n]"
-•12:28:37.442 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-TransactionID: rrt-0dc476f3dad27f6a3-d-ea-2156-9374447-62[\r][\n]"
-j12:28:37.442 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 587[\r][\n]"
-m12:28:37.443 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
-W12:28:37.443 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
-š12:28:37.443 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"location":[{"match":{"precisionLevel":"0","locationCode":"AP02","matchCode":"NP0"},"address":{"formattedAddress":"4241 44TH AVE S MINNEAPOLIS, MN  55406-3540","mainAddressLine":"4241 44TH AVE S","addressLastLine":"MINNEAPOLIS, MN  55406-3540","placeName":"","areaName1":"MN","areaName2":"HENNEPIN COUNTY","areaName3":"MINNEAPOLIS","areaName4":"","postCode":"55406","postCodeExt":"3540","country":"USA","addressNumber":"4241","streetName":"44TH","unitType":"","unitValue":""},"distance":{"unit":"FEET","value":"11.900"},"geometry":{"type":"Point","coordinates":[-93.20985,44.925609]}}]}"
-_12:28:37.444 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
-v12:28:37.444 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
-‘12:28:37.444 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Headers: accept, authorization, content-type
-12:28:37.444 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
-n12:28:37.444 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
-o12:28:37.445 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Max-Age: 3628800
-n12:28:37.445 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
-s12:28:37.445 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 14 Feb 2018 18:28:37 GMT
-c12:28:37.445 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-IsBilled: true
-e12:28:37.445 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-MessageWeight: 3
-Ž12:28:37.445 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-TransactionID: rrt-0dc476f3dad27f6a3-d-ea-2156-9374447-62
-c12:28:37.445 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 587
-f12:28:37.445 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
-|12:28:37.446 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-À12:28:37.446 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
-ó12:28:37.447 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+s18:41:04.680 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+w18:41:04.690 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ë18:41:04.692 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+ñ18:41:04.703 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+Š18:41:04.704 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://api.pitneybowes.com:443
+—18:41:04.801 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to api.pitneybowes.com/34.231.119.159:443
+§18:41:04.802 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to api.pitneybowes.com/34.231.119.159:443 with timeout 10000
+…18:41:04.910 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+“	18:41:04.910 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+k18:41:04.911 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+s18:41:05.066 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+v18:41:05.067 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+˜18:41:05.067 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+·18:41:05.068 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.pitneybowes.com, OU=PSG, O=Pitney Bowes, L=Danbury, ST=Connecticut, C=US
+–18:41:05.068 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.pitneybowes.com, pitneybowes.com]
+Î18:41:05.069 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+£18:41:05.078 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.86.187:49745<->34.231.119.159:443
+Ž18:41:05.078 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
+18:41:05.079 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /oauth/token HTTP/1.1
+q18:41:05.079 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+j18:41:05.084 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /oauth/token HTTP/1.1
+©18:41:05.084 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==
+18:41:05.084 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> content-type: application/x-www-form-urlencoded
+e18:41:05.085 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
+l18:41:05.085 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
+b18:41:05.085 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 29
+i18:41:05.085 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
+f18:41:05.085 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+q18:41:05.086 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /oauth/token HTTP/1.1[\r][\n]"
+°18:41:05.087 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==[\r][\n]"
+†18:41:05.087 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "content-type: application/x-www-form-urlencoded[\r][\n]"
+l18:41:05.087 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
+s18:41:05.088 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
+i18:41:05.088 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 29[\r][\n]"
+p18:41:05.088 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
+m18:41:05.088 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+W18:41:05.088 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+l18:41:05.089 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "grant_type=client_credentials"
+f18:41:05.362 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+u18:41:05.362 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+u18:41:05.362 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+z18:41:05.362 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 21 Feb 2018 00:41:04 GMT[\r][\n]"
+j18:41:05.362 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 186[\r][\n]"
+m18:41:05.363 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+W18:41:05.364 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+‰18:41:05.364 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"access_token":"Ie4uKKH1Gs40GpeGjhtHVRtNVY4B","tokenType":"BearerToken","issuedAt":"1519173664668","expiresIn":"35999","clientID":"hqquQTn9AA4GWOAKyqCpppnFQ0Z3nuHM","org":"pitneybowes"}"
+_18:41:05.372 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+n18:41:05.372 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+n18:41:05.373 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+s18:41:05.373 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 21 Feb 2018 00:41:04 GMT
+c18:41:05.373 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 186
+f18:41:05.374 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+|18:41:05.388 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+À18:41:05.394 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
+ó18:41:05.395 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+18:41:05.403 [Test worker] INFO controller.PBAPI - successfully authenticated with access token: Ie4uKKH1Gs40GpeGjhtHVRtNVY4B
+s18:41:05.407 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+w18:41:05.407 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ë18:41:05.408 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+ñ18:41:05.408 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+Ž18:41:05.408 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
+18:41:05.408 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /location-intelligence/geoenrich/v1/address/bylocation?latitude=44.9256313&longitude=-93.20988499999999&searchRadius=2640&searchRadiusUnit=feet HTTP/1.1
+q18:41:05.408 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+ì18:41:05.408 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /location-intelligence/geoenrich/v1/address/bylocation?latitude=44.9256313&longitude=-93.20988499999999&searchRadius=2640&searchRadiusUnit=feet HTTP/1.1
+‚18:41:05.409 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Bearer Ie4uKKH1Gs40GpeGjhtHVRtNVY4B
+e18:41:05.409 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
+l18:41:05.409 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
+i18:41:05.409 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
+f18:41:05.409 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+ó18:41:05.409 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /location-intelligence/geoenrich/v1/address/bylocation?latitude=44.9256313&longitude=-93.20988499999999&searchRadius=2640&searchRadiusUnit=feet HTTP/1.1[\r][\n]"
+‰18:41:05.409 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Bearer Ie4uKKH1Gs40GpeGjhtHVRtNVY4B[\r][\n]"
+l18:41:05.409 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
+s18:41:05.409 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
+p18:41:05.410 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
+m18:41:05.413 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+W18:41:05.413 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+f18:41:05.550 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+}18:41:05.550 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+˜18:41:05.550 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Headers: accept, authorization, content-type[\r][\n]"
+”18:41:05.551 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS[\r][\n]"
+u18:41:05.551 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+v18:41:05.551 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Max-Age: 3628800[\r][\n]"
+u18:41:05.551 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+z18:41:05.551 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 21 Feb 2018 00:41:04 GMT[\r][\n]"
+j18:41:05.551 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-IsBilled: true[\r][\n]"
+l18:41:05.551 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-MessageWeight: 3[\r][\n]"
+•18:41:05.552 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-TransactionID: rrt-0dc476f3dad27f6a3-d-ea-2156-16166077-8[\r][\n]"
+j18:41:05.552 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 587[\r][\n]"
+m18:41:05.552 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+W18:41:05.552 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+š18:41:05.552 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"location":[{"match":{"precisionLevel":"0","locationCode":"AP02","matchCode":"NP0"},"address":{"formattedAddress":"4241 44TH AVE S MINNEAPOLIS, MN  55406-3540","mainAddressLine":"4241 44TH AVE S","addressLastLine":"MINNEAPOLIS, MN  55406-3540","placeName":"","areaName1":"MN","areaName2":"HENNEPIN COUNTY","areaName3":"MINNEAPOLIS","areaName4":"","postCode":"55406","postCodeExt":"3540","country":"USA","addressNumber":"4241","streetName":"44TH","unitType":"","unitValue":""},"distance":{"unit":"FEET","value":"11.900"},"geometry":{"type":"Point","coordinates":[-93.20985,44.925609]}}]}"
+_18:41:05.553 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+v18:41:05.553 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
+‘18:41:05.553 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Headers: accept, authorization, content-type
+18:41:05.553 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+n18:41:05.554 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+o18:41:05.554 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Max-Age: 3628800
+n18:41:05.554 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+s18:41:05.554 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 21 Feb 2018 00:41:04 GMT
+c18:41:05.554 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-IsBilled: true
+e18:41:05.554 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-MessageWeight: 3
+Ž18:41:05.554 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-TransactionID: rrt-0dc476f3dad27f6a3-d-ea-2156-16166077-8
+c18:41:05.555 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 587
+f18:41:05.555 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+|18:41:05.555 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+À18:41:05.556 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
+ó18:41:05.556 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 >THE RESPONSE:::: 4241 44TH AVE S MINNEAPOLIS, MN  55406-3540
-s12:28:37.453 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-w12:28:37.454 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-ë12:28:37.454 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-ñ12:28:37.455 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-Ž12:28:37.455 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
-12:28:37.455 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /oauth/token HTTP/1.1
-q12:28:37.455 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-j12:28:37.455 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /oauth/token HTTP/1.1
-©12:28:37.456 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==
-12:28:37.456 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> content-type: application/x-www-form-urlencoded
-e12:28:37.456 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
-l12:28:37.456 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
-b12:28:37.456 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 29
-i12:28:37.457 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
-f12:28:37.457 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
-q12:28:37.457 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /oauth/token HTTP/1.1[\r][\n]"
-°12:28:37.457 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==[\r][\n]"
-†12:28:37.457 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "content-type: application/x-www-form-urlencoded[\r][\n]"
-l12:28:37.458 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
-s12:28:37.458 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
-i12:28:37.458 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 29[\r][\n]"
-p12:28:37.458 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
-m12:28:37.458 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
-W12:28:37.459 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
-l12:28:37.459 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "grant_type=client_credentials"
-f12:28:37.669 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-u12:28:37.670 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
-u12:28:37.670 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
-z12:28:37.670 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 14 Feb 2018 18:28:37 GMT[\r][\n]"
-j12:28:37.670 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 186[\r][\n]"
-m12:28:37.670 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
-W12:28:37.670 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
-‰12:28:37.670 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"access_token":"S4zxWkHqou4A2ffqDHbm4QaDWGoU","tokenType":"BearerToken","issuedAt":"1518632917466","expiresIn":"35999","clientID":"hqquQTn9AA4GWOAKyqCpppnFQ0Z3nuHM","org":"pitneybowes"}"
-_12:28:37.670 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
-n12:28:37.670 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
-n12:28:37.670 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
-s12:28:37.671 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 14 Feb 2018 18:28:37 GMT
-c12:28:37.671 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 186
-f12:28:37.671 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
-|12:28:37.671 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-À12:28:37.672 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
-ó12:28:37.672 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-12:28:37.672 [Test worker] INFO controller.PBAPI - successfully authenticated with access token: S4zxWkHqou4A2ffqDHbm4QaDWGoU
-s12:28:37.674 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-w12:28:37.675 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-ë12:28:37.675 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-ñ12:28:37.675 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-Ž12:28:37.675 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
-Ú12:28:37.675 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /location-intelligence/geo911/v1/ahj-psap/bylocation?latitude=44.9256313&longitude=-93.20988499999999%20 HTTP/1.1
-q12:28:37.675 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-Å12:28:37.675 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /location-intelligence/geo911/v1/ahj-psap/bylocation?latitude=44.9256313&longitude=-93.20988499999999%20 HTTP/1.1
-‚12:28:37.675 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Bearer S4zxWkHqou4A2ffqDHbm4QaDWGoU
-e12:28:37.676 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
-l12:28:37.676 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
-i12:28:37.676 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
-f12:28:37.676 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
-Ì12:28:37.676 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /location-intelligence/geo911/v1/ahj-psap/bylocation?latitude=44.9256313&longitude=-93.20988499999999%20 HTTP/1.1[\r][\n]"
-‰12:28:37.676 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Bearer S4zxWkHqou4A2ffqDHbm4QaDWGoU[\r][\n]"
-l12:28:37.676 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
-s12:28:37.676 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
-p12:28:37.676 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
-m12:28:37.677 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
-W12:28:37.677 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
-f12:28:37.804 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-}12:28:37.804 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
-˜12:28:37.804 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Headers: accept, authorization, content-type[\r][\n]"
-”12:28:37.804 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS[\r][\n]"
-u12:28:37.804 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
-v12:28:37.805 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Max-Age: 3628800[\r][\n]"
-u12:28:37.805 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
-z12:28:37.805 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 14 Feb 2018 18:28:37 GMT[\r][\n]"
-j12:28:37.805 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-IsBilled: true[\r][\n]"
-n12:28:37.805 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-MessageWeight: 100[\r][\n]"
-k12:28:37.805 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 2460[\r][\n]"
-m12:28:37.805 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
-W12:28:37.805 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
-ë12:28:37.806 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"ahjs":{"ahjs":[{"ahjType":"fire","ahjId":"552.00000000000","agency":"Hennepin County South","phone":"763-525-6210","comments":"","coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"contactPerson":{"phone":"763-525-6210"},"mailingAddress":{"formattedAddress":"9300 Naper Street Golden Valley MN 55427","mainAddressLine":"9300 Naper Street","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Golden Valley","areaName4":"","postCode":"55427","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},{"ahjType":"police","ahjId":"545.00000000000","agency":"Hennepin County South","phone":"763-525-6210","comments":"","coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"contactPerson":{"phone":"651-643-8398"},"mailingAddress":{"formattedAddress":"9300 Naper Street Golden Valley MN 55427","mainAddressLine":"9300 Naper Street","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Golden Valley","areaName4":"","postCode":"55427","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}]},"psap":{"fccId":"3669","type":"Enhanced","agency":"Minneapolis Emergency Communications Center","phone":"612-348-2345","county":{"name":"Hennepin","fips":"27053"},"coverage":{"area":"Portion of Hennepin(MN) County","comments":"None","exceptions":"None"},"contactPerson":{"title":"9-1-1 Director","prefix":"Ms.","firstName":"Heather","lastName":"Hunt","phone":"612-673-5921","fax":"612-348-7217","email":"N/A","additionalDetails":"None"},"siteDetails":{"phone":"612-348-2345","fax":"612-348-7217","address":{"formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415-1318","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Minneapolis","areaName4":"","postCode":"55415-1318","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},"mailingAddress":{"formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Minneapolis","areaName4":"","postCode":"55415","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}}"
-_12:28:37.807 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
-v12:28:37.808 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
-‘12:28:37.808 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Headers: accept, authorization, content-type
-12:28:37.808 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
-n12:28:37.808 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
-o12:28:37.808 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Max-Age: 3628800
-n12:28:37.808 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
-s12:28:37.809 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 14 Feb 2018 18:28:37 GMT
-c12:28:37.809 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-IsBilled: true
-g12:28:37.809 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-MessageWeight: 100
-d12:28:37.815 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 2460
-f12:28:37.815 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
-|12:28:37.816 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-À12:28:37.816 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
-ó12:28:37.816 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-k12:28:37.821 [Test worker] INFO controller.PBAPI - ahj info for lat: 44.9256313 long: -93.20988499999999 :
+s18:41:05.563 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+w18:41:05.564 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ë18:41:05.564 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+ñ18:41:05.564 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+Ž18:41:05.565 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
+18:41:05.565 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /oauth/token HTTP/1.1
+q18:41:05.565 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+j18:41:05.566 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /oauth/token HTTP/1.1
+©18:41:05.566 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==
+18:41:05.566 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> content-type: application/x-www-form-urlencoded
+e18:41:05.566 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
+l18:41:05.566 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
+b18:41:05.566 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 29
+i18:41:05.566 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
+f18:41:05.566 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+q18:41:05.567 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /oauth/token HTTP/1.1[\r][\n]"
+°18:41:05.567 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==[\r][\n]"
+†18:41:05.567 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "content-type: application/x-www-form-urlencoded[\r][\n]"
+l18:41:05.567 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
+s18:41:05.567 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
+i18:41:05.568 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 29[\r][\n]"
+p18:41:05.568 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
+m18:41:05.568 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+W18:41:05.568 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+l18:41:05.568 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "grant_type=client_credentials"
+f18:41:05.844 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+u18:41:05.844 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+u18:41:05.844 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+z18:41:05.844 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 21 Feb 2018 00:41:05 GMT[\r][\n]"
+j18:41:05.845 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 186[\r][\n]"
+m18:41:05.845 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+W18:41:05.845 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+‰18:41:05.845 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"access_token":"Xw55SIAGnfl1fVPYCvQxGl4v3hUl","tokenType":"BearerToken","issuedAt":"1519173665153","expiresIn":"35999","clientID":"hqquQTn9AA4GWOAKyqCpppnFQ0Z3nuHM","org":"pitneybowes"}"
+_18:41:05.845 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+n18:41:05.845 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+n18:41:05.846 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+s18:41:05.846 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 21 Feb 2018 00:41:05 GMT
+c18:41:05.846 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 186
+f18:41:05.846 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+|18:41:05.846 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+À18:41:05.847 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
+ó18:41:05.847 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+18:41:05.847 [Test worker] INFO controller.PBAPI - successfully authenticated with access token: Xw55SIAGnfl1fVPYCvQxGl4v3hUl
+s18:41:05.849 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+w18:41:05.849 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ë18:41:05.849 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+ñ18:41:05.849 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+Ž18:41:05.850 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
+Ö18:41:05.850 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /location-intelligence/geo911/v1/ahj-psap/byaddress?address=4241%2044th%20ave%20s%20Minneapolis%20MN HTTP/1.1
+q18:41:05.850 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+Á18:41:05.850 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /location-intelligence/geo911/v1/ahj-psap/byaddress?address=4241%2044th%20ave%20s%20Minneapolis%20MN HTTP/1.1
+‚18:41:05.850 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Bearer Xw55SIAGnfl1fVPYCvQxGl4v3hUl
+e18:41:05.850 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
+l18:41:05.851 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
+i18:41:05.851 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
+f18:41:05.851 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+È18:41:05.851 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /location-intelligence/geo911/v1/ahj-psap/byaddress?address=4241%2044th%20ave%20s%20Minneapolis%20MN HTTP/1.1[\r][\n]"
+‰18:41:05.851 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Bearer Xw55SIAGnfl1fVPYCvQxGl4v3hUl[\r][\n]"
+l18:41:05.851 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
+s18:41:05.851 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
+p18:41:05.852 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
+m18:41:05.852 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+W18:41:05.852 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+f18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+}18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+˜18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Headers: accept, authorization, content-type[\r][\n]"
+”18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS[\r][\n]"
+u18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+v18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Max-Age: 3628800[\r][\n]"
+u18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+z18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 21 Feb 2018 00:41:05 GMT[\r][\n]"
+j18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-IsBilled: true[\r][\n]"
+n18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-MessageWeight: 100[\r][\n]"
+k18:41:05.970 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 2460[\r][\n]"
+m18:41:05.971 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+W18:41:05.971 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+ë18:41:05.971 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"ahjs":{"ahjs":[{"ahjType":"fire","ahjId":"552.00000000000","agency":"Hennepin County South","phone":"763-525-6210","comments":"","coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"contactPerson":{"phone":"763-525-6210"},"mailingAddress":{"formattedAddress":"9300 Naper Street Golden Valley MN 55427","mainAddressLine":"9300 Naper Street","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Golden Valley","areaName4":"","postCode":"55427","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},{"ahjType":"police","ahjId":"545.00000000000","agency":"Hennepin County South","phone":"763-525-6210","comments":"","coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"contactPerson":{"phone":"651-643-8398"},"mailingAddress":{"formattedAddress":"9300 Naper Street Golden Valley MN 55427","mainAddressLine":"9300 Naper Street","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Golden Valley","areaName4":"","postCode":"55427","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}]},"psap":{"fccId":"3669","type":"Enhanced","agency":"Minneapolis Emergency Communications Center","phone":"612-348-2345","county":{"name":"Hennepin","fips":"27053"},"coverage":{"area":"Portion of Hennepin(MN) County","comments":"None","exceptions":"None"},"contactPerson":{"title":"9-1-1 Director","prefix":"Ms.","firstName":"Heather","lastName":"Hunt","phone":"612-673-5921","fax":"612-348-7217","email":"N/A","additionalDetails":"None"},"siteDetails":{"phone":"612-348-2345","fax":"612-348-7217","address":{"formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415-1318","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Minneapolis","areaName4":"","postCode":"55415-1318","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},"mailingAddress":{"formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Minneapolis","areaName4":"","postCode":"55415","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}}"
+_18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+v18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
+‘18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Headers: accept, authorization, content-type
+18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+n18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+o18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Max-Age: 3628800
+n18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+s18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 21 Feb 2018 00:41:05 GMT
+c18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-IsBilled: true
+g18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-MessageWeight: 100
+d18:41:05.972 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 2460
+f18:41:05.973 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+|18:41:05.973 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+À18:41:05.973 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
+ó18:41:05.973 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+j18:41:05.976 [Test worker] INFO controller.PBAPI - ahj info for address: 4241 44th ave s Minneapolis MN :
 ž{"psap":{"coverage":{"area":"Portion of Hennepin(MN) County","comments":"None","exceptions":"None"},"agency":"Minneapolis Emergency Communications Center","phone":"612-348-2345","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Minneapolis","formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415","areaName4":"","addressNumber":"","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","postCode":"55415","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"county":{"name":"Hennepin","fips":"27053"},"contactPerson":{"firstName":"Heather","lastName":"Hunt","phone":"612-673-5921","prefix":"Ms.","title":"9-1-1 Director","fax":"612-348-7217","additionalDetails":"None","email":"N/A"},"fccId":"3669","type":"Enhanced","siteDetails":{"address":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Minneapolis","formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415-1318","areaName4":"","addressNumber":"","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","postCode":"55415-1318","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"phone":"612-348-2345","fax":"612-348-7217"}},"ahjs":{"ahjs":[{"coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"comments":"","agency":"Hennepin County South","phone":"763-525-6210","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Golden Valley","formattedAddress":"9300 Naper Street Golden Valley MN 55427","areaName4":"","addressNumber":"","mainAddressLine":"9300 Naper Street","postCode":"55427","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"ahjId":"552.00000000000","contactPerson":{"phone":"763-525-6210"},"ahjType":"fire"},{"coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"comments":"","agency":"Hennepin County South","phone":"763-525-6210","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Golden Valley","formattedAddress":"9300 Naper Street Golden Valley MN 55427","areaName4":"","addressNumber":"","mainAddressLine":"9300 Naper Street","postCode":"55427","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"ahjId":"545.00000000000","contactPerson":{"phone":"651-643-8398"},"ahjType":"police"}]}}
 Œ	{"ahjs":[{"coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"comments":"","agency":"Hennepin County South","phone":"763-525-6210","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Golden Valley","formattedAddress":"9300 Naper Street Golden Valley MN 55427","areaName4":"","addressNumber":"","mainAddressLine":"9300 Naper Street","postCode":"55427","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"ahjId":"552.00000000000","contactPerson":{"phone":"763-525-6210"},"ahjType":"fire"},{"coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"comments":"","agency":"Hennepin County South","phone":"763-525-6210","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Golden Valley","formattedAddress":"9300 Naper Street Golden Valley MN 55427","areaName4":"","addressNumber":"","mainAddressLine":"9300 Naper Street","postCode":"55427","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"ahjId":"545.00000000000","contactPerson":{"phone":"651-643-8398"},"ahjType":"police"}]}
-‚{"ahjs":[{"ahjType":"ems","ahjId":"1215.00000000000","agency":"San Jose Police and Fire","phone":"408-277-8991","comments":"","coverage":{"area":"Portion of Santa Clara(CA) County","exceptions":"None"},"contactPerson":{"phone":"408-277-8911"},"mailingAddress":{"formattedAddress":"201 West Mission Street San Jose CA 95110","mainAddressLine":"201 West Mission Street","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95110","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},{"ahjType":"fire","ahjId":"1185.00000000000","agency":"San Jose Police and Fire","phone":"408-277-8991","comments":"","coverage":{"area":"Portion of Santa Clara(CA) County","exceptions":"None"},"contactPerson":{"phone":"408-277-8911"},"mailingAddress":{"formattedAddress":"201 West Mission Street San Jose CA 95110","mainAddressLine":"201 West Mission Street","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95110","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},{"ahjType":"police","ahjId":"1179.00000000000","agency":"Santa Clara Communications","phone":"408-289-9530","comments":"","coverage":{"area":"Portion of Santa Clara(CA) County","exceptions":"None"},"contactPerson":{"phone":"408-977-3272"},"mailingAddress":{"formattedAddress":"2700 Carol Drive San Jose CA 95125","mainAddressLine":"2700 Carol Drive","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95125","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}],"psap":{"fccId":"935","type":"Enhanced","agency":"San Jose Police Department","phone":"408-277-8911","county":{"name":"Santa Clara","fips":"06085"},"coverage":{"area":"Portion of Santa Clara(CA) County","comments":"None","exceptions":"None"},"contactPerson":{"title":"Communications Division Manager","prefix":"Ms.","firstName":"Joey","lastName":"McDonald","phone":"408-277-4212","fax":"408-294-6911","email":"N/A","additionalDetails":"None"},"siteDetails":{"phone":"408-277-8911","fax":"408-294-6911","address":{"formattedAddress":"201 West Mission Street San Jose CA 95110","mainAddressLine":"201 West Mission Street","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95110","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},"mailingAddress":{"formattedAddress":"201 West Mission Street San Jose CA 95110","mainAddressLine":"201 West Mission Street","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95110","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}}
-L12:28:38.417 [Test worker] INFO controller.reemoApi.ReemoAPI - Schema: dbo
-$2018-01-29 18:18:23.0000000 +00:00
-2018-01-29
-2017-01-29
-L12:28:38.818 [Test worker] INFO controller.reemoApi.ReemoAPI - Schema: dbo
-'no user found for phone number: Jorge
-'No user found for phone number: Jorge
-¦{"latitude":0.0,"longitude":0.0,"ahjs":"{\"ahjs\":[{\"ahjType\":\"ems\",\"ahjId\":\"1215.00000000000\",\"agency\":\"San Jose Police and Fire\",\"phone\":\"408-277-8991\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-277-8911\"},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},{\"ahjType\":\"fire\",\"ahjId\":\"1185.00000000000\",\"agency\":\"San Jose Police and Fire\",\"phone\":\"408-277-8991\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-277-8911\"},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},{\"ahjType\":\"police\",\"ahjId\":\"1179.00000000000\",\"agency\":\"Santa Clara Communications\",\"phone\":\"408-289-9530\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-977-3272\"},\"mailingAddress\":{\"formattedAddress\":\"2700 Carol Drive San Jose CA 95125\",\"mainAddressLine\":\"2700 Carol Drive\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95125\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}}],\"psap\":{\"fccId\":\"935\",\"type\":\"Enhanced\",\"agency\":\"San Jose Police Department\",\"phone\":\"408-277-8911\",\"county\":{\"name\":\"Santa Clara\",\"fips\":\"06085\"},\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"comments\":\"None\",\"exceptions\":\"None\"},\"contactPerson\":{\"title\":\"Communications Division Manager\",\"prefix\":\"Ms.\",\"firstName\":\"Joey\",\"lastName\":\"McDonald\",\"phone\":\"408-277-4212\",\"fax\":\"408-294-6911\",\"email\":\"N/A\",\"additionalDetails\":\"None\"},\"siteDetails\":{\"phone\":\"408-277-8911\",\"fax\":\"408-294-6911\",\"address\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}}}"}
-k12:28:39.066 [Test worker] INFO controller.reemoApi.ReemoAPI - no User found for phone number: 9522287193
-  java.lang.NullPointerException
- F	at controller.reemoApi.ReemoAPI.getBasicUserInfo(ReemoAPI.java:134)
- 8	at reemo.APITests.testBasicUserInfo(APITests.java:40)
- A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- [	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- 6	at java.lang.reflect.Method.invoke(Method.java:498)
- Z	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
- Y	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
- X	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
- W	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
- C	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
- W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
- W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
- A	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
- E	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
- G	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
- E	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
- F	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
- ?	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
- v	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
- p	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
- {	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
- u	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
- A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- [	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- 6	at java.lang.reflect.Method.invoke(Method.java:498)
- Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
- Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
- j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
- y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
- <	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
- c	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
- A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- [	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- 6	at java.lang.reflect.Method.invoke(Method.java:498)
- Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
- Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
- ’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
- ’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
- Y	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
- l	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
- [	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
- U	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
- U	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
- k	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
- +	at java.lang.Thread.run(Thread.java:748)
-N{"phoneNumber":"","name":"","lastAddress":"","latitude":0.0,"longitude":0.0}
-	L12:28:39.422 [Test worker] INFO controller.reemoApi.ReemoAPI - Schema: dbo
-	)no value for column address_line_1_text
-	©{"phoneNumber":"651-555-1234","name":"Reemo Demo03","latitude":37.284309,"longitude":-121.858191,"battery":"100","updateTime":"2018-01-29 18:18:23.0000000 +00:00","ahjs":"{\"ahjs\":[{\"ahjType\":\"ems\",\"ahjId\":\"1215.00000000000\",\"agency\":\"San Jose Police and Fire\",\"phone\":\"408-277-8991\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-277-8911\"},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},{\"ahjType\":\"fire\",\"ahjId\":\"1185.00000000000\",\"agency\":\"San Jose Police and Fire\",\"phone\":\"408-277-8991\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-277-8911\"},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},{\"ahjType\":\"police\",\"ahjId\":\"1179.00000000000\",\"agency\":\"Santa Clara Communications\",\"phone\":\"408-289-9530\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-977-3272\"},\"mailingAddress\":{\"formattedAddress\":\"2700 Carol Drive San Jose CA 95125\",\"mainAddressLine\":\"2700 Carol Drive\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95125\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}}],\"psap\":{\"fccId\":\"935\",\"type\":\"Enhanced\",\"agency\":\"San Jose Police Department\",\"phone\":\"408-277-8911\",\"county\":{\"name\":\"Santa Clara\",\"fips\":\"06085\"},\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"comments\":\"None\",\"exceptions\":\"None\"},\"contactPerson\":{\"title\":\"Communications Division Manager\",\"prefix\":\"Ms.\",\"firstName\":\"Joey\",\"lastName\":\"McDonald\",\"phone\":\"408-277-4212\",\"fax\":\"408-294-6911\",\"email\":\"N/A\",\"additionalDetails\":\"None\"},\"siteDetails\":{\"phone\":\"408-277-8911\",\"fax\":\"408-294-6911\",\"address\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}}}"}
+s18:41:05.978 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+w18:41:05.978 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ë18:41:05.978 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+ñ18:41:05.978 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+Ž18:41:05.978 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
+18:41:05.978 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /oauth/token HTTP/1.1
+q18:41:05.978 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+j18:41:05.979 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /oauth/token HTTP/1.1
+©18:41:05.979 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==
+18:41:05.979 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> content-type: application/x-www-form-urlencoded
+e18:41:05.979 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
+l18:41:05.979 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
+b18:41:05.979 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 29
+i18:41:05.979 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
+f18:41:05.979 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+q18:41:05.979 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /oauth/token HTTP/1.1[\r][\n]"
+°18:41:05.979 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Basic aHFxdVFUbjlBQTRHV09BS3lxQ3BwcG5GUTBaM251SE06Vzd6cDJ5SDB0VGk2TEdBUg==[\r][\n]"
+†18:41:05.980 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "content-type: application/x-www-form-urlencoded[\r][\n]"
+l18:41:05.980 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
+s18:41:05.980 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
+i18:41:05.980 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 29[\r][\n]"
+p18:41:05.980 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
+m18:41:05.980 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+W18:41:05.980 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+l18:41:05.980 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "grant_type=client_credentials"
+f18:41:06.191 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+u18:41:06.191 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+u18:41:06.191 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+z18:41:06.191 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 21 Feb 2018 00:41:05 GMT[\r][\n]"
+j18:41:06.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 186[\r][\n]"
+m18:41:06.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+W18:41:06.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+‰18:41:06.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"access_token":"LuN7G05ApVrlvMILHEDC4ZdBtyNJ","tokenType":"BearerToken","issuedAt":"1519173665483","expiresIn":"35999","clientID":"hqquQTn9AA4GWOAKyqCpppnFQ0Z3nuHM","org":"pitneybowes"}"
+_18:41:06.192 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+n18:41:06.193 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+n18:41:06.193 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+s18:41:06.193 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 21 Feb 2018 00:41:05 GMT
+c18:41:06.193 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 186
+f18:41:06.193 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+|18:41:06.194 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+À18:41:06.195 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
+ó18:41:06.195 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+18:41:06.196 [Test worker] INFO controller.PBAPI - successfully authenticated with access token: LuN7G05ApVrlvMILHEDC4ZdBtyNJ
+s18:41:06.198 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+w18:41:06.198 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ë18:41:06.199 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+ñ18:41:06.199 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+Ž18:41:06.199 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 60000
+Ú18:41:06.199 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /location-intelligence/geo911/v1/ahj-psap/bylocation?latitude=44.9256313&longitude=-93.20988499999999%20 HTTP/1.1
+q18:41:06.199 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+Å18:41:06.200 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /location-intelligence/geo911/v1/ahj-psap/bylocation?latitude=44.9256313&longitude=-93.20988499999999%20 HTTP/1.1
+‚18:41:06.200 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> authorization: Bearer LuN7G05ApVrlvMILHEDC4ZdBtyNJ
+e18:41:06.200 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> accept-encoding: gzip
+l18:41:06.200 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> user-agent: unirest-java/1.1
+i18:41:06.200 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: api.pitneybowes.com
+f18:41:06.201 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+Ì18:41:06.201 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /location-intelligence/geo911/v1/ahj-psap/bylocation?latitude=44.9256313&longitude=-93.20988499999999%20 HTTP/1.1[\r][\n]"
+‰18:41:06.201 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "authorization: Bearer LuN7G05ApVrlvMILHEDC4ZdBtyNJ[\r][\n]"
+l18:41:06.201 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
+s18:41:06.202 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "user-agent: unirest-java/1.1[\r][\n]"
+p18:41:06.202 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: api.pitneybowes.com[\r][\n]"
+m18:41:06.202 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+W18:41:06.202 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+f18:41:06.334 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+}18:41:06.335 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+˜18:41:06.335 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Headers: accept, authorization, content-type[\r][\n]"
+”18:41:06.335 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS[\r][\n]"
+u18:41:06.335 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+v18:41:06.335 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Max-Age: 3628800[\r][\n]"
+u18:41:06.335 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+z18:41:06.335 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 21 Feb 2018 00:41:05 GMT[\r][\n]"
+j18:41:06.335 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-IsBilled: true[\r][\n]"
+n18:41:06.336 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-PB-MessageWeight: 100[\r][\n]"
+k18:41:06.336 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 2460[\r][\n]"
+m18:41:06.336 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+W18:41:06.336 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+ë18:41:06.337 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"ahjs":{"ahjs":[{"ahjType":"fire","ahjId":"552.00000000000","agency":"Hennepin County South","phone":"763-525-6210","comments":"","coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"contactPerson":{"phone":"763-525-6210"},"mailingAddress":{"formattedAddress":"9300 Naper Street Golden Valley MN 55427","mainAddressLine":"9300 Naper Street","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Golden Valley","areaName4":"","postCode":"55427","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},{"ahjType":"police","ahjId":"545.00000000000","agency":"Hennepin County South","phone":"763-525-6210","comments":"","coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"contactPerson":{"phone":"651-643-8398"},"mailingAddress":{"formattedAddress":"9300 Naper Street Golden Valley MN 55427","mainAddressLine":"9300 Naper Street","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Golden Valley","areaName4":"","postCode":"55427","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}]},"psap":{"fccId":"3669","type":"Enhanced","agency":"Minneapolis Emergency Communications Center","phone":"612-348-2345","county":{"name":"Hennepin","fips":"27053"},"coverage":{"area":"Portion of Hennepin(MN) County","comments":"None","exceptions":"None"},"contactPerson":{"title":"9-1-1 Director","prefix":"Ms.","firstName":"Heather","lastName":"Hunt","phone":"612-673-5921","fax":"612-348-7217","email":"N/A","additionalDetails":"None"},"siteDetails":{"phone":"612-348-2345","fax":"612-348-7217","address":{"formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415-1318","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Minneapolis","areaName4":"","postCode":"55415-1318","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},"mailingAddress":{"formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","addressLastLine":"","placeName":"","areaName1":"MN","areaName2":"","areaName3":"Minneapolis","areaName4":"","postCode":"55415","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}}"
+_18:41:06.337 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+v18:41:06.338 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
+‘18:41:06.338 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Headers: accept, authorization, content-type
+18:41:06.338 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+n18:41:06.338 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+o18:41:06.338 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Max-Age: 3628800
+n18:41:06.338 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+s18:41:06.338 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 21 Feb 2018 00:41:05 GMT
+c18:41:06.338 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-IsBilled: true
+g18:41:06.339 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-PB-MessageWeight: 100
+d18:41:06.339 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 2460
+f18:41:06.339 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+|18:41:06.339 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+À18:41:06.340 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://api.pitneybowes.com:443] can be kept alive indefinitely
+ó18:41:06.340 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://api.pitneybowes.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+k18:41:06.343 [Test worker] INFO controller.PBAPI - ahj info for lat: 44.9256313 long: -93.20988499999999 :
+ž{"psap":{"coverage":{"area":"Portion of Hennepin(MN) County","comments":"None","exceptions":"None"},"agency":"Minneapolis Emergency Communications Center","phone":"612-348-2345","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Minneapolis","formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415","areaName4":"","addressNumber":"","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","postCode":"55415","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"county":{"name":"Hennepin","fips":"27053"},"contactPerson":{"firstName":"Heather","lastName":"Hunt","phone":"612-673-5921","prefix":"Ms.","title":"9-1-1 Director","fax":"612-348-7217","additionalDetails":"None","email":"N/A"},"fccId":"3669","type":"Enhanced","siteDetails":{"address":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Minneapolis","formattedAddress":"350 South 5th Street, Room B-911, City Hall Minneapolis MN 55415-1318","areaName4":"","addressNumber":"","mainAddressLine":"350 South 5th Street, Room B-911, City Hall","postCode":"55415-1318","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"phone":"612-348-2345","fax":"612-348-7217"}},"ahjs":{"ahjs":[{"coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"comments":"","agency":"Hennepin County South","phone":"763-525-6210","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Golden Valley","formattedAddress":"9300 Naper Street Golden Valley MN 55427","areaName4":"","addressNumber":"","mainAddressLine":"9300 Naper Street","postCode":"55427","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"ahjId":"552.00000000000","contactPerson":{"phone":"763-525-6210"},"ahjType":"fire"},{"coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"comments":"","agency":"Hennepin County South","phone":"763-525-6210","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Golden Valley","formattedAddress":"9300 Naper Street Golden Valley MN 55427","areaName4":"","addressNumber":"","mainAddressLine":"9300 Naper Street","postCode":"55427","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"ahjId":"545.00000000000","contactPerson":{"phone":"651-643-8398"},"ahjType":"police"}]}}
+Œ	{"ahjs":[{"coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"comments":"","agency":"Hennepin County South","phone":"763-525-6210","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Golden Valley","formattedAddress":"9300 Naper Street Golden Valley MN 55427","areaName4":"","addressNumber":"","mainAddressLine":"9300 Naper Street","postCode":"55427","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"ahjId":"552.00000000000","contactPerson":{"phone":"763-525-6210"},"ahjType":"fire"},{"coverage":{"area":"Portion of Hennepin(MN) County","exceptions":"None"},"comments":"","agency":"Hennepin County South","phone":"763-525-6210","mailingAddress":{"country":"USA","unitType":"","areaName1":"MN","areaName2":"","streetName":"","areaName3":"Golden Valley","formattedAddress":"9300 Naper Street Golden Valley MN 55427","areaName4":"","addressNumber":"","mainAddressLine":"9300 Naper Street","postCode":"55427","postCodeExt":"","placeName":"","addressLastLine":"","unitValue":""},"ahjId":"545.00000000000","contactPerson":{"phone":"651-643-8398"},"ahjType":"police"}]}
+‚{"ahjs":[{"ahjType":"ems","ahjId":"1215.00000000000","agency":"San Jose Police and Fire","phone":"408-277-8991","comments":"","coverage":{"area":"Portion of Santa Clara(CA) County","exceptions":"None"},"contactPerson":{"phone":"408-277-8911"},"mailingAddress":{"formattedAddress":"201 West Mission Street San Jose CA 95110","mainAddressLine":"201 West Mission Street","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95110","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},{"ahjType":"fire","ahjId":"1185.00000000000","agency":"San Jose Police and Fire","phone":"408-277-8991","comments":"","coverage":{"area":"Portion of Santa Clara(CA) County","exceptions":"None"},"contactPerson":{"phone":"408-277-8911"},"mailingAddress":{"formattedAddress":"201 West Mission Street San Jose CA 95110","mainAddressLine":"201 West Mission Street","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95110","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},{"ahjType":"police","ahjId":"1179.00000000000","agency":"Santa Clara Communications","phone":"408-289-9530","comments":"","coverage":{"area":"Portion of Santa Clara(CA) County","exceptions":"None"},"contactPerson":{"phone":"408-977-3272"},"mailingAddress":{"formattedAddress":"2700 Carol Drive San Jose CA 95125","mainAddressLine":"2700 Carol Drive","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95125","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}],"psap":{"fccId":"935","type":"Enhanced","agency":"San Jose Police Department","phone":"408-277-8911","county":{"name":"Santa Clara","fips":"06085"},"coverage":{"area":"Portion of Santa Clara(CA) County","comments":"None","exceptions":"None"},"contactPerson":{"title":"Communications Division Manager","prefix":"Ms.","firstName":"Joey","lastName":"McDonald","phone":"408-277-4212","fax":"408-294-6911","email":"N/A","additionalDetails":"None"},"siteDetails":{"phone":"408-277-8911","fax":"408-294-6911","address":{"formattedAddress":"201 West Mission Street San Jose CA 95110","mainAddressLine":"201 West Mission Street","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95110","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}},"mailingAddress":{"formattedAddress":"201 West Mission Street San Jose CA 95110","mainAddressLine":"201 West Mission Street","addressLastLine":"","placeName":"","areaName1":"CA","areaName2":"","areaName3":"San Jose","areaName4":"","postCode":"95110","postCodeExt":"","country":"USA","addressNumber":"","streetName":"","unitType":"","unitValue":""}}}
+L18:41:06.921 [Test worker] INFO controller.reemoApi.ReemoAPI - Schema: dbo
+$2018-01-29 18:18:23.0000000 +00:00
+2018-01-29
+2017-01-29
+L18:41:07.280 [Test worker] INFO controller.reemoApi.ReemoAPI - Schema: dbo
+ ]com.microsoft.sqlserver.jdbc.SQLServerException: The statement did not return a result set.
+ f	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:227)
+ }	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:470)
+ |	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:409)
+ I	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7151)
+ d	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:2478)
+ a	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:219)
+ c	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:199)
+ o	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:331)
+ @	at controller.reemoApi.ReemoAPI.getLocation(ReemoAPI.java:78)
+ <	at controller.reemoApi.ReemoAPI.getUser(ReemoAPI.java:64)
+ 2	at reemo.APITests.testBadUser(APITests.java:31)
+ A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ [	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Z	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+ Y	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ X	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+ W	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ C	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+ W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+ W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+ A	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+ E	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+ G	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+ E	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+ F	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+ ?	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+ v	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+ p	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+ {	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+ u	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+ A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ [	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+ Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+ y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+ <	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+ c	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+ A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ [	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+ Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ ’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+ ’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+ Y	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+ l	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+ [	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+ U	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ U	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ k	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+ +	at java.lang.Thread.run(Thread.java:748)
+'no user found for phone number: Jorge
+ ]com.microsoft.sqlserver.jdbc.SQLServerException: The statement did not return a result set.
+ f	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:227)
+ }	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:470)
+ |	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:409)
+ I	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7151)
+ d	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:2478)
+ a	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:219)
+ c	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:199)
+ o	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:331)
+ @	at controller.reemoApi.ReemoAPI.getBattery(ReemoAPI.java:103)
+ <	at controller.reemoApi.ReemoAPI.getUser(ReemoAPI.java:65)
+ 2	at reemo.APITests.testBadUser(APITests.java:31)
+ A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ [	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Z	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+ Y	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ X	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+ W	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ C	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+ W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+ W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+ A	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+ E	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+ G	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+ E	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+ F	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+ ?	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+ v	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+ p	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+ {	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+ u	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+ A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ [	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+ Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+ y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+ <	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+ c	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+ A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ [	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+ Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ ’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+ ’	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+ Y	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+ l	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+ [	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+ U	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ U	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ k	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+ +	at java.lang.Thread.run(Thread.java:748)
+'No user found for phone number: Jorge
+±{"name":" ","latitude":0.0,"longitude":0.0,"ahjs":"{\"ahjs\":[{\"ahjType\":\"ems\",\"ahjId\":\"1215.00000000000\",\"agency\":\"San Jose Police and Fire\",\"phone\":\"408-277-8991\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-277-8911\"},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},{\"ahjType\":\"fire\",\"ahjId\":\"1185.00000000000\",\"agency\":\"San Jose Police and Fire\",\"phone\":\"408-277-8991\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-277-8911\"},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},{\"ahjType\":\"police\",\"ahjId\":\"1179.00000000000\",\"agency\":\"Santa Clara Communications\",\"phone\":\"408-289-9530\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-977-3272\"},\"mailingAddress\":{\"formattedAddress\":\"2700 Carol Drive San Jose CA 95125\",\"mainAddressLine\":\"2700 Carol Drive\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95125\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}}],\"psap\":{\"fccId\":\"935\",\"type\":\"Enhanced\",\"agency\":\"San Jose Police Department\",\"phone\":\"408-277-8911\",\"county\":{\"name\":\"Santa Clara\",\"fips\":\"06085\"},\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"comments\":\"None\",\"exceptions\":\"None\"},\"contactPerson\":{\"title\":\"Communications Division Manager\",\"prefix\":\"Ms.\",\"firstName\":\"Joey\",\"lastName\":\"McDonald\",\"phone\":\"408-277-4212\",\"fax\":\"408-294-6911\",\"email\":\"N/A\",\"additionalDetails\":\"None\"},\"siteDetails\":{\"phone\":\"408-277-8911\",\"fax\":\"408-294-6911\",\"address\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}}}"}
+	L18:41:07.867 [Test worker] INFO controller.reemoApi.ReemoAPI - Schema: dbo
+	)no value for column address_line_1_text
+	V{"phoneNumber":"651-555-1234","name":"Pete Obringer","latitude":0.0,"longitude":0.0}
+
+L18:41:08.278 [Test worker] INFO controller.reemoApi.ReemoAPI - Schema: dbo
+
+)no value for column address_line_1_text
+
+©{"phoneNumber":"651-555-1234","name":"Pete Obringer","latitude":37.284273,"longitude":-121.857985,"battery":"85","updateTime":"2018-02-21 00:06:59.0000000 +00:00","ahjs":"{\"ahjs\":[{\"ahjType\":\"ems\",\"ahjId\":\"1215.00000000000\",\"agency\":\"San Jose Police and Fire\",\"phone\":\"408-277-8991\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-277-8911\"},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},{\"ahjType\":\"fire\",\"ahjId\":\"1185.00000000000\",\"agency\":\"San Jose Police and Fire\",\"phone\":\"408-277-8991\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-277-8911\"},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},{\"ahjType\":\"police\",\"ahjId\":\"1179.00000000000\",\"agency\":\"Santa Clara Communications\",\"phone\":\"408-289-9530\",\"comments\":\"\",\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"exceptions\":\"None\"},\"contactPerson\":{\"phone\":\"408-977-3272\"},\"mailingAddress\":{\"formattedAddress\":\"2700 Carol Drive San Jose CA 95125\",\"mainAddressLine\":\"2700 Carol Drive\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95125\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}}],\"psap\":{\"fccId\":\"935\",\"type\":\"Enhanced\",\"agency\":\"San Jose Police Department\",\"phone\":\"408-277-8911\",\"county\":{\"name\":\"Santa Clara\",\"fips\":\"06085\"},\"coverage\":{\"area\":\"Portion of Santa Clara(CA) County\",\"comments\":\"None\",\"exceptions\":\"None\"},\"contactPerson\":{\"title\":\"Communications Division Manager\",\"prefix\":\"Ms.\",\"firstName\":\"Joey\",\"lastName\":\"McDonald\",\"phone\":\"408-277-4212\",\"fax\":\"408-294-6911\",\"email\":\"N/A\",\"additionalDetails\":\"None\"},\"siteDetails\":{\"phone\":\"408-277-8911\",\"fax\":\"408-294-6911\",\"address\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}},\"mailingAddress\":{\"formattedAddress\":\"201 West Mission Street San Jose CA 95110\",\"mainAddressLine\":\"201 West Mission Street\",\"addressLastLine\":\"\",\"placeName\":\"\",\"areaName1\":\"CA\",\"areaName2\":\"\",\"areaName3\":\"San Jose\",\"areaName4\":\"\",\"postCode\":\"95110\",\"postCodeExt\":\"\",\"country\":\"USA\",\"addressNumber\":\"\",\"streetName\":\"\",\"unitType\":\"\",\"unitValue\":\"\"}}}"}
+L18:41:08.854 [Test worker] INFO controller.reemoApi.ReemoAPI - Schema: dbo
+1
+is pers event: true
