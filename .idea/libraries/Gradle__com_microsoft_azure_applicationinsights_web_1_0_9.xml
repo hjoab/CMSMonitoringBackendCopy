@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.microsoft.azure:applicationinsights-web:1.0.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/applicationinsights-web/1.0.9/14b443312d6b66fb5efcad0b74419195f905a4e/applicationinsights-web-1.0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/applicationinsights-web/1.0.9/f168fbd2532a4eecb3f27f828a04e5780ff72a8a/applicationinsights-web-1.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

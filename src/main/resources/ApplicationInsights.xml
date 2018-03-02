@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ApplicationInsights xmlns="http://schemas.microsoft.com/ApplicationInsights/2013/Settings" schemaVersion="2014-05-30">
     <SDKLogger />
-    <InstrumentationKey>0099d25d-7394-4dc3-a2d0-4b3beb0dfc17</InstrumentationKey>
+    <InstrumentationKey>cac57185-b352-403b-a52a-059c8fffa0be</InstrumentationKey>
     <ContextInitializers>
     </ContextInitializers>
     <TelemetryInitializers>
