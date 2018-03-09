@@ -23,7 +23,7 @@ public class MonitoringController {
     }
 
     @CrossOrigin(origins = "*")
-    @RequestMapping(value = "/psap", method = RequestMethod.GET)
+    @RequestMapping(value = "/psapTesting", method = RequestMethod.GET)
     public @ResponseBody
     String psapInformation(@RequestParam(value="latitude",required = true) String latitude,
                       @RequestParam(value="longitude",required = true) String longitude){
