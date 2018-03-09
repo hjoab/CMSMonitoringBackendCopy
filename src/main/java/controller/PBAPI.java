@@ -62,7 +62,7 @@ public class PBAPI {
             //System.out.println(response.getCode());
             //System.out.println(response.getBody());
             logger.info("ahj info for lat: " + latitude + " long: " + longitude + " :\n" + response.getBody().toString());
-            String ahj = response.getBody().getObject().getJSONObject("ahjs").toString();
+            String ahj = response.getBody().getObject().getJSONObject("ahjs").getJSONObject("ahjs").toString();
             return ahj;
 
         }catch (Exception e){

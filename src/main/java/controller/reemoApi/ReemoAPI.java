@@ -225,6 +225,8 @@ public class ReemoAPI {
         //DateFormat format = new SimpleDateFormat("YYYY-MM-DD HH:mm:ss-mmmmmmm");
         //2018-01-29 18:18:23.0000000 +00:00
 
+        // 2018-03-09T14:10:20Z
+        // yyyy-MM-DDTHH:mm:ssz
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.nnnnnnn ZZZZZ", Locale.ENGLISH);
         LocalDate date1 = LocalDate.parse(dateString1, formatter);
         System.out.println(date1.toString());
