@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.microsoft.azure:applicationinsights-logging-log4j2:2.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/applicationinsights-logging-log4j2/2.0.1/d1282f5f6cf589e0b761d04cf0e293d00e71ba3a/applicationinsights-logging-log4j2-2.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/applicationinsights-logging-log4j2/2.0.1/f7e0585cf745049f7a2066279326250cce6bdbb/applicationinsights-logging-log4j2-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

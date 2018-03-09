@@ -3,10 +3,12 @@ package controller.reemoApi;
 import com.google.gson.Gson;
 import controller.User;
 import org.apache.log4j.Logger;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.sql.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -222,18 +224,11 @@ public class ReemoAPI {
 
     // returns true if the first date is later than the second, or false otherwise
     public boolean isLater(String dateString1, String dateString2){
-        //DateFormat format = new SimpleDateFormat("YYYY-MM-DD HH:mm:ss-mmmmmmm");
-        //2018-01-29 18:18:23.0000000 +00:00
+        Instant instant = Instant.parse(dateString1);
 
-        // 2018-03-09T14:10:20Z
-        // yyyy-MM-DDTHH:mm:ssz
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.nnnnnnn ZZZZZ", Locale.ENGLISH);
-        LocalDate date1 = LocalDate.parse(dateString1, formatter);
-        System.out.println(date1.toString());
-        LocalDate date2 = LocalDate.parse(dateString2, formatter);
-        System.out.println(date2.toString());
+        Instant instant2 = Instant.parse(dateString2);
 
-        return date1.isAfter(date2);
+        return instant.isAfter(instant2);
 
     }
 
